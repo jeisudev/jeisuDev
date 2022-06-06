@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend Deca, sans-serif;
+}
+:root{
+    --white: #fff;
+    --whitesmoke: #f9f9f9;
+    --light-grey: #ececec;
+    --grey: #c4c4c4;
+    --medium-grey: #a7a7a7;
+    --deep-grey: #343434;
+    --black: #000000;
+    --blue: #1B77f3;
+    --red: #cf3c3f;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: clamp(15px, 8%, 20px);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoRiot{
+    width: 130px;
+    margin-bottom: 80px;
+}
+.nameLg{
+    font-size: 1.5em;
+    color: var(--deep-grey);
+    margin-bottom: 30px;
+}
+.loginLb{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: none;
+    padding: 5px 10px 10px;
+    font-weight: 600;
+    color: var(--deep-grey);
+    outline: none;
+    background-color: var(--light-grey);
+}
+.icons{
+   display: flex; 
+   gap: 10px;
+   width: 100%;
+}
+.icons img{
+   width: 20px; 
+}
+.btn{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+.icons .btn:nth-child(1){
+    background-color: var(--blue);
+}
+.icons .btn:nth-child(2){
+    background-color: var(--light-grey);
+}
+.icons .btn:nth-child(3){
+    background-color: var(--black);
+}
+.checkbox{
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.check{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--light-grey);
+    margin-right: 8px;
+    border-radius: 3px;
+}
+.check:checked{
+    background-color: var(--red);
+}
+.check::after{
+   display: block;
+   width: 5px;
+   height: 10px;
+   border: 3px solid white;
+   border-width: 0 3px 3px 0;
+   transform: rotate(45deg);
+   margin: 2px 6px;
+   content: "";
+}
+.buttonLg{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+    background-color: var(--light-grey);
+}
+.buttonLg .ico{
+    height: 3vh;
+    width: 100%;
+}
+.aLink{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--medium-grey);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.loginPt1{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wallpaper{
+    width: 100%;
+    background-image: url("./img/capa.png");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+header{
+    display: flex;
+}
